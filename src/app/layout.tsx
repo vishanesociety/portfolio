@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { profile } from "@/lib/data";
-import ScrollProgress from "@/components/ScrollProgress";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -31,11 +30,6 @@ export default function RootLayout({
     <html lang="en" className={inter.variable}>
       <body>
         <script dangerouslySetInnerHTML={{ __html: noFlashTheme }} />
-        <div className="backdrop" aria-hidden>
-          <span className="blob blob-1" />
-          <span className="blob blob-2" />
-        </div>
-        <ScrollProgress />
         {children}
       </body>
     </html>

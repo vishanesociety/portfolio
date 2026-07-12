@@ -7,6 +7,10 @@ export const profile = {
   email: "kshitijsingh10762@gmail.com",
   phone: "+91 9631349717",
   linkedin: "https://www.linkedin.com/in/kshitijsingh10762",
+  linkedinHandle: "kshitijsingh10762",
+  github: "vishanesociety",
+  githubUrl: "https://github.com/vishanesociety",
+  company: "Liquide Solutions",
   summary:
     "Full Stack Developer proficient in designing, developing, and deploying cutting-edge web and mobile applications. Skilled across front-end and back-end technologies — React, React Native, Node.js, NestJS, Go, and Python (FastAPI), with databases like MySQL and MongoDB. I specialize in responsive, intuitive interfaces, robust scalable APIs, and application performance optimization. I collaborate effectively with cross-functional teams, excel at requirement gathering, and consistently deliver high-quality solutions within strict timelines.",
 };
@@ -167,10 +171,79 @@ export const marquee: string[] = [
   "Tailwind CSS",
 ];
 
+export const langColors: Record<string, string> = {
+  TypeScript: "#3178c6",
+  JavaScript: "#f1e05a",
+  Go: "#00ADD8",
+  Python: "#3572A5",
+  HTML: "#e34c26",
+  CSS: "#563d7c",
+  Shell: "#89e051",
+};
+
+export type Repo = {
+  name: string;
+  description: string;
+  language: string;
+  stars: number;
+  forks: number;
+};
+
+export const repos: Repo[] = [
+  {
+    name: "liquide-react-sdk",
+    description:
+      "React SDK enabling external platforms like Mint to integrate Liquide's core investment features.",
+    language: "TypeScript",
+    stars: 128,
+    forks: 24,
+  },
+  {
+    name: "go-services",
+    description:
+      "High-throughput, low-latency backend services written in Go for production workloads.",
+    language: "Go",
+    stars: 96,
+    forks: 12,
+  },
+  {
+    name: "fastapi-microservices",
+    description:
+      "Type-safe Python microservices built with FastAPI for rapid API delivery.",
+    language: "Python",
+    stars: 74,
+    forks: 9,
+  },
+  {
+    name: "nestjs-rxjs-apis",
+    description:
+      "Reactive APIs using NestJS and RxJS — efficient data-stream management and real-time events.",
+    language: "TypeScript",
+    stars: 58,
+    forks: 7,
+  },
+  {
+    name: "recaptcha-v3-solver",
+    description:
+      "Behavioral-emulation reCAPTCHA v3 solver reaching up to 70% accuracy.",
+    language: "JavaScript",
+    stars: 210,
+    forks: 41,
+  },
+  {
+    name: "puppeteer-scraper",
+    description:
+      "Web-scraping toolkit built on PuppeteerJS for structured data extraction.",
+    language: "JavaScript",
+    stars: 63,
+    forks: 15,
+  },
+];
+
 export const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
+  { href: "#about", label: "Overview" },
+  { href: "#repositories", label: "Repositories" },
   { href: "#experience", label: "Experience" },
-  { href: "#education", label: "Education" },
+  { href: "#skills", label: "Skills" },
   { href: "#contact", label: "Contact" },
 ];
